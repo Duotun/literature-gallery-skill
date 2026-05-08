@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Paper Gallery</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <div>
+        <p class="eyebrow">Literature Library</p>
+        <h1>Paper Gallery</h1>
+      </div>
+      <p class="header-note">Interactive video generation, world models, and HCI</p>
+    </header>
+
+    <main class="workspace">
+      <aside class="sidebar" aria-label="论文筛选器">
+        <div class="control-block">
+          <label for="searchInput">搜索</label>
+          <input id="searchInput" type="search" placeholder="标题、作者、关键词..." autocomplete="off" />
+        </div>
+
+        <div class="control-block">
+          <label for="sortSelect">排序</label>
+          <select id="sortSelect">
+            <option value="year-desc">年份由新到旧</option>
+            <option value="year-asc">年份由旧到新</option>
+            <option value="title-asc">标题 A-Z</option>
+            <option value="venue-asc">Venue A-Z</option>
+          </select>
+        </div>
+
+        <div class="control-block">
+          <div class="filter-heading">年份</div>
+          <div class="chip-list" id="yearFilters"></div>
+        </div>
+
+        <div class="control-block">
+          <div class="filter-heading">领域</div>
+          <div class="chip-list" id="areaFilters"></div>
+        </div>
+
+        <div class="control-block">
+          <div class="filter-heading">Venue</div>
+          <div class="chip-list" id="venueFilters"></div>
+        </div>
+
+        <div class="control-block">
+          <div class="filter-heading">关键词</div>
+          <div class="chip-list" id="keywordFilters"></div>
+        </div>
+      </aside>
+
+      <section class="content">
+        <div class="toolbar">
+          <div>
+            <p class="count" id="resultCount">0 papers</p>
+            <p class="hint">点击卡片查看摘要、笔记、链接和标签。</p>
+          </div>
+          <button class="text-button" id="clearFilters" type="button">清除筛选</button>
+        </div>
+
+        <div class="gallery" id="gallery" aria-live="polite"></div>
+        <div class="empty-state" id="emptyState" hidden>
+          <h2>没有匹配的论文</h2>
+          <p>换个关键词或清除筛选试试。</p>
+        </div>
+      </section>
+    </main>
+
+    <dialog class="paper-dialog" id="paperDialog">
+      <article class="paper-detail" id="paperDetail"></article>
+    </dialog>
+
+    <script src="data/papers.js"></script>
+    <script src="src/app.js"></script>
+  </body>
+</html>

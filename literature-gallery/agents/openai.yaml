@@ -1,0 +1,4 @@
+interface:
+  display_name: "Literature Gallery"
+  short_description: "Create and maintain static paper gallery libraries."
+  default_prompt: "Create a minimalist literature gallery from my papers, with paper cards, real covers, filters, details, and deployment-ready static files."
