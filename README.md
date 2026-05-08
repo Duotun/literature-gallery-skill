@@ -2,6 +2,8 @@
 
 Create polished, deployable literature-management gallery websites from paper metadata.
 
+![Literature Gallery screenshot](docs/screenshot.png)
+
 This Codex skill turns a research topic or a list of papers into a static paper gallery with:
 
 - paper cards with covers or teaser screenshots
@@ -17,14 +19,6 @@ Demo built with this skill: [paperscodex.vercel.app](https://paperscodex.vercel.
 
 Research notes usually end up scattered across Zotero, Notion, Markdown files, browser tabs, and half-finished spreadsheets. This skill gives Codex a repeatable workflow for making a clean public-facing literature gallery from that mess.
 
-It is especially useful for fast-moving research areas such as:
-
-- interactive video generation
-- world models
-- human-computer interaction
-- XR and embodied interaction
-- multimodal AI
-- paper-reading lists for labs, courses, and projects
 
 ## Install
 
