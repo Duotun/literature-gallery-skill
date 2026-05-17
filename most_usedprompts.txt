@@ -1,3 +1,5 @@
 Use literature-gallery to create a new literature gallery in ./papers to seed with papers  recent HCI papers focusing on combining generative models and mixed reality
 
-codex resume 019e3504-4cb7-7881-a897-b68b4997a4b4
+codex resume 019e3504-4cb7-7881-a897-b68b4997a4b4 
+
+click on the papers/index.html for local browsing as well
