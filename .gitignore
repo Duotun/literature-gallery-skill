@@ -3,3 +3,6 @@ __pycache__/
 .vercel/
 node_modules/
 dist/
+tmp_files/
+my_projects/
+papers/**
